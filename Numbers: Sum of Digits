@@ -1,0 +1,9 @@
+$Given a three-digit number. Find the sum of its digits.
+
+
+print ("Give me a three-digit number. I'll find the sum of those digits: ")
+number = int(input())
+a = (number//100) #get first number
+b = (number//10%10) #gets the tens place
+c = (number%10) #gets the remainder to ones place
+print(a + b + c)
