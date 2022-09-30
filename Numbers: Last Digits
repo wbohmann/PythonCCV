@@ -1,0 +1,7 @@
+#Given an integer, print the last two digits
+
+a = int(input("Give me an integer greater than 9.  I'll print its last two digits: "))
+a_string = str(a)
+a_length = len(a_string)
+print(a_string[a_length -2: a_length])
+#start point is 2 back from the end : past the last
