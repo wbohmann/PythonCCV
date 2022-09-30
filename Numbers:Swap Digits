@@ -1,0 +1,8 @@
+#From an input of two numbers, Swap Digits
+
+
+num = int(input())
+remainder = (num%10) # returns the remainder of the input, using base 10 as there are only two numbers
+result = (num//10) #the floor division // rounds the result down to the nearest whole number
+
+print(str(remainder) + str(result) )
