@@ -1,0 +1,51 @@
+#Name Swithcing:  
+Ask the user to enter a person's name in first-last order, and display the name in last-comma-first order. For example, if the user enters the string "Thomas Jefferson" #, the output should be "Jefferson, Thomas". Allow the user to input 3 names.  Call the program  nameReverse.
+
+def nameReverse():
+    for x in range(3):
+        name =input("How about a proper name: ")
+        words = name.split()  #this will return a list
+        print(words[1] + ", " + words[0])
+        
+nameReverse()
+
+#Splitting a domain name
+#Ask the user to enter a three-part internet domain name and print the company name only. For example, if the user enters the string "www.Amazon.com", the output should #be "Amazon". Call the program companyName. Allow the user to input 3 internet domain names.
+
+def companyName():
+    for x in range(3):
+        name =input("Enter a three part internet domain name, like www.Amazon.com: ")
+        print(name[4:-4]) #in the range www. is the first four and -4 is last four
+        
+companyName()
+
+#Slice and Dice
+#Write a program, initials, to ask the user to enter the names of the students in a class. The program should first ask how many names will be input. Then it should ask #for the first name and last name of student 1, the name of student 2, the name of student 3, etc. For each student, it should determine the student’s initials and #output these initials.
+
+def initials():
+    num_range = int(input("How many names would you like to input?"))
+    for x in range(num_range):
+        f_name = input("Enter the first name of student: ")
+        l_name = input("Enter the last name of student: ")
+        print("The student's initials are "+ (f_name[0])+(l_name[0]))
+    
+initials()
+
+#Write a program that counts the words in a sentence
+def wordCount():
+    for x in range(3):
+        s = input("Write a short sentence: ")
+        words = s.split() #this splits the sentance into a list
+        number = len(words) #this counts the length of the list
+        print (number)
+    
+wordCount()
+
+#Write a program that averages length of the words in a sentence
+def wordAverage():
+    for x in range(3):
+        s = input("Write a short sentence: ")
+        words = s.split() #this splits the sentance into a list
+        number = len(words) #this counts the length of the list
+
+wordAverage()
