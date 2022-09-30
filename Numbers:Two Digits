@@ -1,0 +1,20 @@
+#Given a two-digit integer, print its left digit (a tens digit) and then its right digit (a ones digit). 
+#Use the operator of integer division for obtaining the tens digit and the operator of taking remainder for obtaining the ones digit. 
+# Read an integer:
+# a = int(input())
+# Print a value:
+# print(a)
+
+a = int(input("Give me a two digit number"))
+ten_digit = int(a/10) #this will find the tens digit
+one_digit = a%10 # this will find the ones digit
+print(str(ten_digit) + " " + str(one_digit))
+
+
+
+##For example, in the numeral 12.34 (written in base 10),the 2 is immediately to the left of the separator, so it is in the ones or units place, and is called the units digit or ones digit;[7][8][9]
+#the 1 to the left of the ones place is in the tens place, and is called the tens digit;[10]
+#the 3 is to the right of the ones place, so it is in the tenths place, and is called the tenths digit;[11]
+#the 4 to the right of the tenths place is in the hundredths place, and is called the hundredths digit.[11]
+
+##The % symbol in Python is called the Modulo Operator. It returns the remainder of dividing the left hand operand by right hand operand. It's used to get the remainder of a division problem
