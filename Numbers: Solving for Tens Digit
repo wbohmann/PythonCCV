@@ -1,0 +1,7 @@
+#Given an integer, print its tens digit.
+
+
+a = int(input("Give me an integer.  I'll print its' tens digit: "))
+print(a // 10 % 10)
+
+#This is an order of operations problem.  So we take the input, say 543 and find the floor division // which rounds the result down to nearest whole number the the #modulu operator returns the remainder of the division.  Good explanation:  https://www.youtube.com/watch?v=EwoHJF-aB_w
