@@ -45,7 +45,11 @@ wordCount()
 def wordAverage():
     for x in range(3):
         s = input("Write a short sentence: ")
+        number_letters = len(s) - s.count(" ") # counts lenght of sentence - spaces
         words = s.split() #this splits the sentance into a list
         number = len(words) #this counts the length of the list
-
+        num_average =(number_letters / number)
+        # make the total string size AT LEAST 10 (including digits and points), fill with zeros to the left
+        print('{:0>10f}'.format(num_average))
+       
 wordAverage()
