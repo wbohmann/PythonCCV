@@ -1,0 +1,10 @@
+#Repl.it exercises
+#6.1 While: List of Squares - For a given integer N, print all the squares of positive integers where the square is less than or equal to N, in ascending order.
+
+number =100 # this is the limit to count to
+i=1 #the is the start of the counting ,beginning at 1
+while((i*i)<=number):  
+    print(i**2, end= " ")
+    i +=1
+
+  #as long as the while loop is number, print the number squared and iterate again
