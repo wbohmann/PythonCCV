@@ -1,0 +1,27 @@
+#Will Bohmann
+#7.7 Repl.it swapping
+'''Given a list of numbers, swap adjacent elements in each pair (swap `A[0]` with `A[1]`, `A[2]` with `A[3]`, etc.). Print the resulting list. If a list has an odd number of elements, leave the last element intact.'''
+
+
+# Read a list of integers:
+
+'''
+a[0],a[1] = a[1],a[0]
+
+a[2],a[3] = a[3],a[2]
+a[4],a[5] = a[5],a[4]
+a[6],a[7] =a[7],a[6]
+a[8],a[9] = a[9],a[8] 
+
+
+print(a[0],a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9] )
+'''
+
+a = [int(s) for s in input().split()]
+for i in range(0, len(a)-1, 2): #min value, max value -1 to account for odd number, every 2 digits
+    temp = a[i] #temp value equals first item
+    a[i]= a[i+1] #first item plus the neighbor
+    a[i+1] = temp #swap neighbor with first item
+
+for i in a:
+    print(i, end=" ") # print all on one line
