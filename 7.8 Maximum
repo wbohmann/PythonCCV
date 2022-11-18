@@ -1,0 +1,7 @@
+# Will Bohmann
+#repl.it 7.8 find max value and print index value
+
+a = [int(s) for s in input().split()]
+maxvalue =max(a)  #the max() function is used to find out the element with the highest value in the list
+index = a.index(maxvalue)  #the index() function is used to find out the index of the highest value
+print(maxvalue,index)
