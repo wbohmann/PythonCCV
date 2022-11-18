@@ -1,0 +1,7 @@
+#Will Bohmann
+#7.3 Greater than left of neighbor
+# Read a list of integers:
+a = [int(s) for s in input().split()]  #this line is from repl.it
+for i in range(1, len(a)): #range is (min_value, max_value)
+    if a[i] > a[i-1]:  #look through and if the item is greater than item to left, print
+        print(a[i], end=' ') #this prints all on one line
