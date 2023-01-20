@@ -4,7 +4,7 @@
 # function definition below
 
 def rectangleArea():
-    print("I am going to show you the power of Python...")
+    print("I am going to show you the power of Python because it is cool...")
     print("Let's start by showing you the area of a rectangle")
     length = int(input("Enter the length, whole numbers please: "))
     width = int(input("Enter the width: "))
