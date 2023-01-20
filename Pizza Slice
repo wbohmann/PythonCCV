@@ -1,0 +1,6 @@
+# Get shoe size input from user
+slice = int(input("Enter how many slices you like to eat: "))
+print("You eat " + str(slice) + " slices!")
+wholepizza = 8
+pizza = slice % wholepizza
+print("You eat " + str(pizza) + " pizzas")
